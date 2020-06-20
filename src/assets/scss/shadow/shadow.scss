@@ -1,0 +1,27 @@
+.shadow {
+  position: relative;
+
+  &_top:before, &_bottom:after {
+    content: '';
+    height: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  &_bottom:after {
+    top: 100%;
+    background:
+            linear-gradient(90deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 50%),
+            linear-gradient(-90deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 50%),
+            linear-gradient(180deg, rgba(238,242,245,1), rgba(238,242,245,0));
+  }
+
+  &_top:before {
+    bottom: 100%;
+    background:
+            linear-gradient(90deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 50%),
+            linear-gradient(-90deg, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 50%),
+            linear-gradient(0deg, rgba(238,242,245,1), rgba(238,242,245,0));
+  }
+}

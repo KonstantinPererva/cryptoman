@@ -1,0 +1,16 @@
+.main-menu-nav {
+
+  &_footer {
+    margin: 0 0 0 30px;
+
+    & .main-menu-link {
+      color: #fff;
+      text-transform: none;
+      font-weight: bold;
+    }
+
+    & .main-menu-item {
+      margin-left: 10px;
+    }
+  }
+}

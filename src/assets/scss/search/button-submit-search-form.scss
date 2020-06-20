@@ -1,0 +1,15 @@
+.button-submit-search-form {
+  flex-shrink: 0;
+  width: 34px;
+  height: 26px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    & svg path {
+      fill: $c-main;
+    }
+  }
+}

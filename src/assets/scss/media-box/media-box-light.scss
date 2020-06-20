@@ -1,0 +1,25 @@
+.media-box-light {
+  max-width: 1030px;
+  width: 100%;
+  margin: 0 auto;
+
+  &__inner {
+    max-height: 530px;
+    padding: 0 30px 0 0;
+
+    & .simplebar-track.simplebar-vertical {
+      background: #ededed;
+      width: 7px;
+      border-radius: 4px;
+
+      & .simplebar-scrollbar {
+        right: 0;
+
+        &:before {
+          background: #999;
+          width: 7px;
+        }
+      }
+    }
+  }
+}

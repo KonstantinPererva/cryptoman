@@ -1,0 +1,13 @@
+.main-menu-link {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #333333;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+
+  &.active {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,35 @@
+.form-registration-input {
+  display: block;
+  height: 38px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #B8C5D0;
+  box-shadow: 0 4px 10px #EEF2F5;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 36px;
+  color: $c-dark-text;
+  padding: 0 15px;
+  -webkit-appearance: none;
+
+  &::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 36px;
+    color: #B8C5D0;
+  }
+  &:-moz-placeholder           {
+    font-size: 14px;
+    line-height: 36px;
+    color: #B8C5D0;
+  }
+  &::-moz-placeholder          {
+    font-size: 14px;
+    line-height: 36px;
+    color: #B8C5D0;
+  }
+  &:-ms-input-placeholder      {
+    font-size: 14px;
+    line-height: 36px;
+    color: #B8C5D0;
+  }
+}

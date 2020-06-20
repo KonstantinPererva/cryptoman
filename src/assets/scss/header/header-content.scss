@@ -1,0 +1,26 @@
+.header-content {
+  display: flex;
+
+  &.page-content {
+    padding: 21px 20px;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+  }
+
+  &__right {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    & .main-menu-nav {
+      margin: 0 15px 0 0;
+    }
+
+    & .main-search {
+      margin: 0 21px 0 0;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.footer-panel {
+  display: flex;
+  margin: 0 0 28px;
+
+  &__logo {
+    flex-shrink: 0;
+  }
+
+  &__right {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    & .main-soc-net {
+      margin-left: 20px;
+    }
+  }
+}

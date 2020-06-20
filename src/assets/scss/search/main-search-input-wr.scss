@@ -1,0 +1,17 @@
+.main-search-input-wr {
+  position: relative;
+  width: 180px;
+  height: 26px;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: #B8C5D0;
+  }
+}

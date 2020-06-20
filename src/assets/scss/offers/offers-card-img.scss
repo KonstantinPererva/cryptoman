@@ -1,0 +1,12 @@
+.offers-card-img {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 72px;
+
+  & img {
+    flex-shrink: 0;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}

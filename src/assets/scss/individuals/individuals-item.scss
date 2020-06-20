@@ -1,0 +1,47 @@
+.individuals-item {
+  position: relative;
+  //width: 33.33%;
+  padding: 0 20px;
+
+  &:after, &:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 36.84%;
+    background: $c-dark-text;
+    position: absolute;
+    right: 0;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
+  }
+
+  &:last-child {
+    &:after, &:before, & .individuals-item__inner:after {
+      display: none;
+    }
+  }
+
+  &__inner {
+    &:after {
+      content: '&';
+      display: block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 36px;
+      text-align: center;
+      color: $c-dark-text;
+      position: absolute;
+      right: -20px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}

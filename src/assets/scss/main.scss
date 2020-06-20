@@ -1,0 +1,31 @@
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/normalize";
+@import "utils/reset";
+@import "utils/fonts";
+@import "utils/base";
+
+//@import "../css/style.css";
+@import "header/style";
+@import "footer/style";
+@import "main/style";
+@import "button/style";
+@import "menu/style";
+@import "search/style";
+@import "banner/style";
+@import "text-box/style";
+@import "info-box/style";
+@import "media-box/style";
+@import "text-banner/style";
+@import "copy/style";
+@import "created/style";
+@import "shadow/style";
+@import "logo/style";
+@import "soc-net/style";
+@import "pay/style";
+@import "breadcrumbs/style";
+@import "page-data/style";
+@import "individuals/style";
+@import "offers/style";
+@import "registration/style";
+

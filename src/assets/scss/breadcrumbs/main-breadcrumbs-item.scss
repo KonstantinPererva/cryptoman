@@ -1,0 +1,37 @@
+.main-breadcrumbs-item {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  position: relative;
+  margin: 0 22px 0 0;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background: $c-gray-text;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: -13px;
+  }
+
+  &:last-child:after {
+    display: none;
+  }
+
+  & a {
+    display: inline-block;
+    vertical-align: top;
+    color: $c-gray-text;
+  }
+
+  & span {
+    display: inline-block;
+    vertical-align: top;
+    color: $c-dark-text;
+  }
+}

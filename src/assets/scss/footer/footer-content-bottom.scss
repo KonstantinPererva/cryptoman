@@ -1,0 +1,13 @@
+.footer-content-bottom {
+  display: flex;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    flex: 1 1 0;
+  }
+
+  &__right {
+    flex-shrink: 0;
+  }
+}

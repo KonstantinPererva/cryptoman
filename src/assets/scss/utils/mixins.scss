@@ -1,0 +1,79 @@
+// px to rem
+@function rem($pixels, $context: $mainFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
+@mixin size($width,$height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 0 25px;
+  font-family: $f-g;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 13px;
+  outline: none;
+  user-select: none;
+  transition: 150ms;
+  cursor: pointer;
+
+  &_small {
+    height: 29px;
+    padding: 0 18px;
+    font-size: 13px;
+  }
+
+  &:hover, &:focus, &:active {
+    outline: none;
+  }
+}
+
+@mixin posImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@mixin fullBlock {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+@mixin grid ($cols, $margin-right, $margin-bottom) {
+  margin-right: $margin-right + 0%;
+  margin-bottom: $margin-bottom + 0%;
+  width: ((100% - (($cols - 1) * $margin-right)) / $cols);
+
+  &:nth-child(#{$cols}n) {
+    margin-right: 0;
+  }
+}

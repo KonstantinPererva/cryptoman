@@ -1,0 +1,16 @@
+.button-main {
+  @include button;
+  background: $c-bg-main;
+  border-color: $c-main;
+  box-shadow: 0 4px 10px #EEF2F5;
+  color: #fff;
+
+  &:hover, &:focus, &:active {
+    background: #fff;
+    color: $c-main;
+
+    & svg path {
+      fill: $c-main;
+    }
+  }
+}

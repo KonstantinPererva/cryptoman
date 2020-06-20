@@ -1,0 +1,7 @@
+.media-box-light-section {
+  padding: 26px 20px 32px;
+
+  & + .media-box-light-section {
+    border-top: 1px solid #333;
+  }
+}

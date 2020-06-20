@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/libs/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="assets/libs/simplebar/simplebar.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="page-content header-content">
+                <div class="header-content__logo">
+                    <div class="main-logo">
+                        <a href="/">
+                            <img src="assets/img/svg/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header-content__right">
+                    <nav class="main-menu-nav main-menu-nav-horizontal">
+                        <ul class="main-menu-list">
+                            <li class="main-menu-item">
+                                <a href="analytics.html" class="main-menu-link active">Аналитика</a>
+                            </li>
+
+                            <li class="main-menu-item">
+                                <a href="training.html" class="main-menu-link">Обучение</a>
+                            </li>
+
+                            <li class="main-menu-item">
+                                <a href="cooperation.html" class="main-menu-link">Сотрудничество</a>
+                            </li>
+
+                            <li class="main-menu-item">
+                                <a href="" class="main-menu-link">Услуги</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="main-search">
+                        <form action="!" class="main-search-form">
+                            <div class="main-search-row">
+                                <button class="button-submit-search-form" type="submit">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.8901 16.8296L12.6613 11.6007C13.653 10.3764 14.25 8.81977 14.25 7.12503C14.25 3.19631 11.0537 0 7.12499 0C3.19627 0 0 3.19631 0 7.12503C0 11.0537 3.19631 14.2501 7.12503 14.2501C8.81977 14.2501 10.3764 13.653 11.6007 12.6613L16.8296 17.8902C16.9761 18.0366 17.2135 18.0366 17.36 17.8902L17.8902 17.3599C18.0366 17.2135 18.0366 16.976 17.8901 16.8296ZM7.12503 12.75C4.02322 12.75 1.50001 10.2268 1.50001 7.12503C1.50001 4.02322 4.02322 1.50001 7.12503 1.50001C10.2268 1.50001 12.75 4.02322 12.75 7.12503C12.75 10.2268 10.2268 12.75 7.12503 12.75Z" fill="#7D8892"/>
+                                    </svg>
+                                </button>
+
+                                <div class="main-search-input-wr">
+                                    <input type="text" class="main-search-input" placeholder="Поиск" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="main-register">
+                        <button class="button-main button-register" type="button">
+                            <span class="button-register__ico">
+                                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.60665 9.78131C9.8303 9.78131 11.6331 7.59171 11.6331 4.89069C11.6331 2.1896 11.0412 0 7.60665 0C4.17208 0 3.58008 2.1896 3.58008 4.89069C3.58008 7.59171 5.38288 9.78131 7.60665 9.78131Z" fill="white"/>
+                                    <path d="M15.2015 17.0509C15.127 12.3457 14.5125 11.0049 9.81 10.1562C9.81 10.1562 9.14806 10.9997 7.6052 10.9997C6.06234 10.9997 5.40029 10.1562 5.40029 10.1562C0.749142 10.9957 0.0972571 12.3165 0.0115428 16.8981C0.00451427 17.2722 0.00125714 17.2919 0 17.2484C0.000285714 17.3298 0.000628444 17.4803 0.000628444 17.7428C0.000628444 17.7428 1.12017 19.9997 7.6052 19.9997C14.0901 19.9997 15.2098 17.7428 15.2098 17.7428C15.2098 17.5741 15.2099 17.4569 15.2101 17.3771C15.2088 17.404 15.2063 17.3519 15.2015 17.0509Z" fill="white"/>
+                                </svg>
+                            </span>
+
+                            <span class="button-register__text">Вход</span>
+                        </button>
+                    </div>
+
+<!--                    Залогиненный пользователь-->
+                    <div class="main-register" style="display: none">
+                        <a href="#" class="button-main button-register" type="button">
+                            <span class="button-register__ico">
+                                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.60665 9.78131C9.8303 9.78131 11.6331 7.59171 11.6331 4.89069C11.6331 2.1896 11.0412 0 7.60665 0C4.17208 0 3.58008 2.1896 3.58008 4.89069C3.58008 7.59171 5.38288 9.78131 7.60665 9.78131Z" fill="white"/>
+                                    <path d="M15.2015 17.0509C15.127 12.3457 14.5125 11.0049 9.81 10.1562C9.81 10.1562 9.14806 10.9997 7.6052 10.9997C6.06234 10.9997 5.40029 10.1562 5.40029 10.1562C0.749142 10.9957 0.0972571 12.3165 0.0115428 16.8981C0.00451427 17.2722 0.00125714 17.2919 0 17.2484C0.000285714 17.3298 0.000628444 17.4803 0.000628444 17.7428C0.000628444 17.7428 1.12017 19.9997 7.6052 19.9997C14.0901 19.9997 15.2098 17.7428 15.2098 17.7428C15.2098 17.5741 15.2099 17.4569 15.2101 17.3771C15.2088 17.404 15.2063 17.3519 15.2015 17.0509Z" fill="white"/>
+                                </svg>
+                            </span>
+
+                            <span class="button-register__text">Мой кабинет</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="shadow shadow_bottom"></div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="page-content">
+                <div class="main-breadcrumbs">
+                    <div class="main-breadcrumbs-list">
+                        <div class="main-breadcrumbs-item">
+                            <a href="/">Главная</a>
+                        </div>
+
+                        <div class="main-breadcrumbs-item">
+                            <a href="training.html">Обучение</a>
+                        </div>
+
+                        <div class="main-breadcrumbs-item">
+                            <span>Заголовок раздела</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-content">
+                <div class="page-data">
+                    <div class="page-data-name">
+                        <span>Обучение</span>
+                    </div>
+
+                    <div class="page-data-descr">
+                        <span>Краткое описание преимуществ подписки In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-content media-box-content">
+                <div class="media-box">
+                    <section class="media-box-section media-box-section_right-img">
+                        <div class="media-box-section__box media-box-section__box_img">
+                            <img src="assets/img/articles/news_1.jpg" alt="article" />
+                        </div>
+
+                        <div class="media-box-section__box media-box-section__box_text">
+                            <div class="media-box-section-title">
+                                <span>Заголовок статьи</span>
+                            </div>
+
+                            <div class="media-box-section-descr">
+                                <p>Начало описания статьи... Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                            </div>
+
+                            <div class="media-box-section-button">
+                                <a href="" class="button-link">Читать больше</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="media-box-section media-box-section_right-img">
+                        <div class="media-box-section__box media-box-section__box_img">
+                            <img src="assets/img/articles/news_2.jpg" alt="article" />
+                        </div>
+
+                        <div class="media-box-section__box media-box-section__box_text">
+                            <div class="media-box-section-title">
+                                <span>Заголовок статьи</span>
+                            </div>
+
+                            <div class="media-box-section-descr">
+                                <p>Начало описания статьи... Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                            </div>
+
+                            <div class="media-box-section-button">
+                                <a href="" class="button-link">Читать больше</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="page-content">
+                <div class="individuals">
+                    <div class="wr-media-box-title">
+                        <div class="media-box-title">
+                            <span>Авторы статей</span>
+                        </div>
+
+                        <div class="media-box-subtitle">
+                            <span>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</span>
+                        </div>
+                    </div>
+
+                    <div class="individuals-list">
+                        <div class="individuals-item">
+                            <div class="individuals-item__inner">
+                                <div class="individuals-card">
+                                    <div class="individuals-card-photo">
+                                        <img src="assets/img/photo/photo-1.jpg" alt="photo" />
+                                    </div>
+
+                                    <div class="individuals-card-name">
+                                        <span>Инициалы автора</span>
+                                    </div>
+
+                                    <div class="individuals-card-descr">
+                                        <span>Описание о ресурсе... Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu</span>
+                                    </div>
+
+                                    <div class="individuals-card-soc-net">
+                                        <ul class="soc-net-list">
+                                            <li class="soc-net-item">
+                                                <a href="" class="soc-net-link">
+                                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.52451 15.0303C6.92868 15.0303 7.02992 14.8157 6.82442 14.2745L5.07227 8.77435L18.5596 1.14258" fill="#3166B5"/>
+                                                        <path d="M7.52148 15.0309C7.98128 15.0309 8.18443 14.8303 8.44108 14.5923L10.8933 12.3179L7.83445 10.5586" fill="#80ACEF"/>
+                                                        <path d="M7.83511 10.559L15.247 15.7821C16.0928 16.2272 16.7032 15.9967 16.9139 15.0331L19.931 1.47242C20.2398 0.29121 19.4589 -0.244534 18.6497 0.105845L0.93382 6.6215C-0.275458 7.08414 -0.268409 7.72763 0.713393 8.01436L5.2597 9.3678L15.7849 3.03429C16.2818 2.7469 16.7378 2.90141 16.3635 3.21825" fill="#4583E0"/>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="individuals-item">
+                            <div class="individuals-item__inner">
+                                <div class="individuals-card">
+                                    <div class="individuals-card-photo">
+                                        <img src="assets/img/photo/photo-2.jpg" alt="photo" />
+                                    </div>
+
+                                    <div class="individuals-card-name">
+                                        <span>Инициалы автора</span>
+                                    </div>
+
+                                    <div class="individuals-card-descr">
+                                        <span>Описание о ресурсе... Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu</span>
+                                    </div>
+
+                                    <div class="individuals-card-soc-net">
+                                        <ul class="soc-net-list">
+                                            <li class="soc-net-item">
+                                                <a href="" class="soc-net-link">
+                                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.52451 15.0303C6.92868 15.0303 7.02992 14.8157 6.82442 14.2745L5.07227 8.77435L18.5596 1.14258" fill="#3166B5"/>
+                                                        <path d="M7.52148 15.0309C7.98128 15.0309 8.18443 14.8303 8.44108 14.5923L10.8933 12.3179L7.83445 10.5586" fill="#80ACEF"/>
+                                                        <path d="M7.83511 10.559L15.247 15.7821C16.0928 16.2272 16.7032 15.9967 16.9139 15.0331L19.931 1.47242C20.2398 0.29121 19.4589 -0.244534 18.6497 0.105845L0.93382 6.6215C-0.275458 7.08414 -0.268409 7.72763 0.713393 8.01436L5.2597 9.3678L15.7849 3.03429C16.2818 2.7469 16.7378 2.90141 16.3635 3.21825" fill="#4583E0"/>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="individuals-item">
+                            <div class="individuals-item__inner">
+                                <div class="individuals-card">
+                                    <div class="individuals-card-photo">
+                                        <img src="assets/img/photo/photo-1.jpg" alt="photo" />
+                                    </div>
+
+                                    <div class="individuals-card-name">
+                                        <span>Инициалы автора</span>
+                                    </div>
+
+                                    <div class="individuals-card-descr">
+                                        <span>Описание о ресурсе... Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu</span>
+                                    </div>
+
+                                    <div class="individuals-card-soc-net">
+                                        <ul class="soc-net-list">
+                                            <li class="soc-net-item">
+                                                <a href="" class="soc-net-link">
+                                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.52451 15.0303C6.92868 15.0303 7.02992 14.8157 6.82442 14.2745L5.07227 8.77435L18.5596 1.14258" fill="#3166B5"/>
+                                                        <path d="M7.52148 15.0309C7.98128 15.0309 8.18443 14.8303 8.44108 14.5923L10.8933 12.3179L7.83445 10.5586" fill="#80ACEF"/>
+                                                        <path d="M7.83511 10.559L15.247 15.7821C16.0928 16.2272 16.7032 15.9967 16.9139 15.0331L19.931 1.47242C20.2398 0.29121 19.4589 -0.244534 18.6497 0.105845L0.93382 6.6215C-0.275458 7.08414 -0.268409 7.72763 0.713393 8.01436L5.2597 9.3678L15.7849 3.03429C16.2818 2.7469 16.7378 2.90141 16.3635 3.21825" fill="#4583E0"/>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-content">
+                <div class="offers">
+                    <div class="wr-media-box-title">
+                        <div class="media-box-title">
+                            <span>Наше предложение</span>
+                        </div>
+                    </div>
+
+                    <div class="offers-list">
+                        <div class="offers-item">
+                            <div class="offers-item__inner">
+                                <div class="offers-card">
+                                    <div class="offers-card-img">
+                                        <img src="assets/img/svg/offers_2.svg" alt="photo" />
+                                    </div>
+
+                                    <div class="offers-card-title">
+                                        <span>Наименование подписки</span>
+                                    </div>
+
+                                    <div class="offers-card-descr">
+                                        <span>Длительность подписки</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-content">
+                <div class="registration">
+                    <div class="registration-descr">
+                        <span>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</span>
+                    </div>
+
+                    <div class="registration-title">
+                        <span>Регистрация</span>
+                    </div>
+
+                    <div class="wr-form-registration">
+                        <form action="!" class="form-registration">
+                            <div class="form-registration-row">
+                                <input type="text" class="form-registration-input" placeholder="Email" />
+                            </div>
+
+                            <div class="form-registration-row">
+                                <input type="text" class="form-registration-input" placeholder="Пароль" />
+                            </div>
+
+                            <div class="form-registration-row">
+                                <input type="text" class="form-registration-input" placeholder="Повторите пароль" />
+                            </div>
+
+                            <div class="form-registration-button">
+                                <button type="submit" class="button-main">
+                                    <span>Зарегистрироваться</span>
+                                </button>
+                            </div>
+
+                            <div class="form-registration-bottom">
+                                <div class="form-registration-text">
+                                    <span>Уже зарегистрированы?</span>
+                                </div>
+
+                                <button type="button" class="button-link">Войти</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="page-content footer-content">
+                <div class="footer-panel">
+                    <div class="footer-panel__logo">
+                        <div class="main-logo">
+                            <a href="/">
+                                <img src="assets/img/svg/logo-white.svg" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-panel__right">
+                        <nav class="main-menu-nav main-menu-nav-horizontal main-menu-nav_footer">
+                            <ul class="main-menu-list">
+                                <li class="main-menu-item">
+                                    <a href="" class="main-menu-link active">Аналитика</a>
+                                </li>
+
+                                <li class="main-menu-item">
+                                    <a href="" class="main-menu-link">Обучение</a>
+                                </li>
+
+                                <li class="main-menu-item">
+                                    <a href="" class="main-menu-link">Сотрудничество</a>
+                                </li>
+
+                                <li class="main-menu-item">
+                                    <a href="" class="main-menu-link">Услуги</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="main-soc-net">
+                            <ul class="soc-net-list">
+                                <li class="soc-net-item">
+                                    <a href="" class="soc-net-link"></a>
+                                </li>
+
+                                <li class="soc-net-item">
+                                    <a href="" class="soc-net-link"></a>
+                                </li>
+
+                                <li class="soc-net-item">
+                                    <a href="" class="soc-net-link"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-content-bottom">
+                    <div class="footer-content-bottom__left">
+                        <div class="main-copy">
+                            <span>copyright © 2020 Cryptomann all rights reserved</span>
+                        </div>
+
+                        <span class="separator"></span>
+
+                        <div class="main-created">
+                            <a href="" class="main-created-link">
+                                <svg width="112" height="11" viewBox="0 0 112 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.21145 8.50217C2.69163 8.50217 2.22653 8.38709 1.81615 8.15694C1.40577 7.92678 1.0843 7.60863 0.851754 7.20247C0.619204 6.78955 0.50293 6.32586 0.50293 5.8114C0.50293 5.29017 0.619204 4.82647 0.851754 4.42032C1.0843 4.0074 1.40577 3.68924 1.81615 3.46586C2.22653 3.2357 2.69163 3.12063 3.21145 3.12063C3.64235 3.12063 4.03221 3.20524 4.38104 3.37447C4.7367 3.53694 5.02397 3.77724 5.24284 4.0954L4.86324 4.36955C4.67172 4.10555 4.43233 3.90924 4.14507 3.78063C3.86464 3.64524 3.55343 3.57755 3.21145 3.57755C2.79423 3.57755 2.41804 3.67232 2.0829 3.86186C1.75459 4.04463 1.49469 4.30524 1.30317 4.6437C1.1185 4.98217 1.02617 5.3714 1.02617 5.8114C1.02617 6.2514 1.1185 6.64063 1.30317 6.97909C1.49469 7.31755 1.75459 7.58155 2.0829 7.77109C2.41804 7.95386 2.79423 8.04524 3.21145 8.04524C3.55343 8.04524 3.86464 7.98094 4.14507 7.85232C4.43233 7.71694 4.67172 7.51724 4.86324 7.25324L5.24284 7.5274C5.02397 7.84555 4.7367 8.08924 4.38104 8.25848C4.03221 8.42094 3.64235 8.50217 3.21145 8.50217ZM7.27102 4.31878C7.43517 3.93294 7.69166 3.63847 8.04049 3.4354C8.38931 3.22555 8.81333 3.12063 9.31263 3.12063V3.61817L9.18951 3.60801C8.59446 3.60801 8.1294 3.79417 7.79426 4.16647C7.45911 4.53201 7.29154 5.04309 7.29154 5.69971V8.46155H6.77856V3.16124H7.27102V4.31878ZM15.2004 5.93324H10.5939C10.6076 6.34617 10.7136 6.71509 10.9119 7.04001C11.1103 7.35817 11.377 7.60524 11.7122 7.78124C12.0541 7.95724 12.4372 8.04524 12.8612 8.04524C13.2101 8.04524 13.5315 7.98432 13.8256 7.86247C14.1266 7.73386 14.3762 7.54771 14.5746 7.30401L14.8721 7.63909C14.6396 7.91663 14.3454 8.12986 13.9898 8.27878C13.641 8.42771 13.2614 8.50217 12.851 8.50217C12.3175 8.50217 11.8421 8.38709 11.4249 8.15694C11.0077 7.92678 10.6794 7.60863 10.44 7.20247C10.2074 6.79632 10.0912 6.33263 10.0912 5.8114C10.0912 5.29694 10.2006 4.83663 10.4195 4.43047C10.6452 4.01755 10.953 3.69601 11.3428 3.46586C11.7327 3.2357 12.1704 3.12063 12.656 3.12063C13.1417 3.12063 13.576 3.2357 13.959 3.46586C14.3489 3.68924 14.6532 4.00401 14.8721 4.41017C15.0978 4.81632 15.2107 5.27663 15.2107 5.79109L15.2004 5.93324ZM12.656 3.5674C12.2799 3.5674 11.9413 3.65201 11.6403 3.82124C11.3394 3.9837 11.0966 4.21724 10.9119 4.52186C10.7341 4.8197 10.6315 5.15817 10.6041 5.53724H14.708C14.6874 5.15817 14.5848 4.8197 14.4002 4.52186C14.2155 4.22401 13.9727 3.99047 13.6717 3.82124C13.3708 3.65201 13.0322 3.5674 12.656 3.5674ZM18.453 3.12063C19.1165 3.12063 19.626 3.28986 19.9817 3.62832C20.3374 3.96001 20.5152 4.45078 20.5152 5.10063V8.46155H20.0227V7.51724C19.8517 7.82863 19.6021 8.07232 19.2738 8.24832C18.9455 8.41755 18.5522 8.50217 18.0939 8.50217C17.4989 8.50217 17.0269 8.3634 16.6781 8.08586C16.3361 7.80832 16.1651 7.44278 16.1651 6.98924C16.1651 6.54924 16.3225 6.19386 16.6371 5.92309C16.9586 5.64555 17.4681 5.50678 18.1658 5.50678H20.0022V5.08032C20.0022 4.58617 19.8654 4.21047 19.5918 3.95324C19.3251 3.69601 18.9318 3.5674 18.412 3.5674C18.0563 3.5674 17.7143 3.62832 17.386 3.75017C17.0646 3.87201 16.791 4.03447 16.5653 4.23755L16.3088 3.87201C16.5755 3.63509 16.897 3.45232 17.2732 3.3237C17.6494 3.18832 18.0426 3.12063 18.453 3.12063ZM18.1658 8.08586C18.6103 8.08586 18.9865 7.98432 19.2943 7.78124C19.6089 7.57817 19.8449 7.28371 20.0022 6.89786V5.90278H18.176C17.6494 5.90278 17.2663 5.99755 17.0269 6.18709C16.7944 6.37663 16.6781 6.63724 16.6781 6.96894C16.6781 7.31417 16.8081 7.58832 17.068 7.7914C17.3279 7.98771 17.6938 8.08586 18.1658 8.08586ZM25.286 8.12647C25.156 8.24832 24.9919 8.34309 24.7935 8.41078C24.602 8.4717 24.4002 8.50217 24.1882 8.50217C23.7231 8.50217 23.364 8.37694 23.1109 8.12647C22.8579 7.86924 22.7313 7.51386 22.7313 7.06032V3.59786H21.7464V3.16124H22.7313V2.0037H23.2443V3.16124H24.9474V3.59786H23.2443V7.00955C23.2443 7.35478 23.3264 7.61878 23.4905 7.80155C23.6615 7.97755 23.9112 8.06555 24.2395 8.06555C24.5746 8.06555 24.8516 7.9674 25.0705 7.77109L25.286 8.12647ZM31.0506 5.93324H26.4441C26.4578 6.34617 26.5638 6.71509 26.7621 7.04001C26.9605 7.35817 27.2272 7.60524 27.5624 7.78124C27.9044 7.95724 28.2874 8.04524 28.7115 8.04524C29.0603 8.04524 29.3817 7.98432 29.6758 7.86247C29.9768 7.73386 30.2264 7.54771 30.4248 7.30401L30.7223 7.63909C30.4898 7.91663 30.1957 8.12986 29.84 8.27878C29.4912 8.42771 29.1116 8.50217 28.7012 8.50217C28.1677 8.50217 27.6923 8.38709 27.2751 8.15694C26.8579 7.92678 26.5296 7.60863 26.2902 7.20247C26.0577 6.79632 25.9414 6.33263 25.9414 5.8114C25.9414 5.29694 26.0508 4.83663 26.2697 4.43047C26.4954 4.01755 26.8032 3.69601 27.193 3.46586C27.5829 3.2357 28.0206 3.12063 28.5063 3.12063C28.9919 3.12063 29.4262 3.2357 29.8092 3.46586C30.1991 3.68924 30.5035 4.00401 30.7223 4.41017C30.948 4.81632 31.0609 5.27663 31.0609 5.79109L31.0506 5.93324ZM28.5063 3.5674C28.1301 3.5674 27.7915 3.65201 27.4906 3.82124C27.1896 3.9837 26.9468 4.21724 26.7621 4.52186C26.5843 4.8197 26.4817 5.15817 26.4544 5.53724H30.5582C30.5377 5.15817 30.4351 4.8197 30.2504 4.52186C30.0657 4.22401 29.8229 3.99047 29.522 3.82124C29.221 3.65201 28.8824 3.5674 28.5063 3.5674ZM37.4083 0.927397V8.46155H36.9056V7.21263C36.6935 7.62555 36.396 7.94371 36.013 8.16709C35.63 8.39048 35.1957 8.50217 34.71 8.50217C34.2107 8.50217 33.7593 8.38709 33.3558 8.15694C32.9522 7.92678 32.6342 7.60863 32.4016 7.20247C32.1759 6.79632 32.0631 6.33263 32.0631 5.8114C32.0631 5.29017 32.1759 4.82647 32.4016 4.42032C32.6342 4.0074 32.9522 3.68924 33.3558 3.46586C33.7593 3.2357 34.2107 3.12063 34.71 3.12063C35.1888 3.12063 35.6163 3.23232 35.9925 3.4557C36.3755 3.67909 36.6764 3.99047 36.8953 4.38986V0.927397H37.4083ZM34.7408 8.04524C35.1512 8.04524 35.5171 7.95047 35.8386 7.76094C36.1669 7.5714 36.4234 7.3074 36.6081 6.96894C36.7996 6.63047 36.8953 6.24463 36.8953 5.8114C36.8953 5.37817 36.7996 4.99232 36.6081 4.65386C36.4234 4.3154 36.1669 4.0514 35.8386 3.86186C35.5171 3.67232 35.1512 3.57755 34.7408 3.57755C34.3304 3.57755 33.9611 3.67232 33.6328 3.86186C33.3113 4.0514 33.0548 4.3154 32.8633 4.65386C32.6786 4.99232 32.5863 5.37817 32.5863 5.8114C32.5863 6.24463 32.6786 6.63047 32.8633 6.96894C33.0548 7.3074 33.3113 7.5714 33.6328 7.76094C33.9611 7.95047 34.3304 8.04524 34.7408 8.04524ZM44.8941 3.12063C45.3933 3.12063 45.8447 3.2357 46.2483 3.46586C46.6519 3.68924 46.9664 4.0074 47.1922 4.42032C47.4247 4.82647 47.541 5.29017 47.541 5.8114C47.541 6.33263 47.4247 6.79632 47.1922 7.20247C46.9664 7.60863 46.6519 7.92678 46.2483 8.15694C45.8447 8.38709 45.3933 8.50217 44.8941 8.50217C44.4152 8.50217 43.981 8.39048 43.591 8.16709C43.2081 7.93694 42.9106 7.61878 42.6985 7.21263V8.46155H42.206V0.927397H42.7191V4.36955C42.931 3.97694 43.2285 3.67232 43.6116 3.4557C43.9947 3.23232 44.4221 3.12063 44.8941 3.12063ZM44.8633 8.04524C45.2737 8.04524 45.643 7.95047 45.9712 7.76094C46.2996 7.5714 46.556 7.3074 46.7407 6.96894C46.9322 6.63047 47.028 6.24463 47.028 5.8114C47.028 5.37817 46.9322 4.99232 46.7407 4.65386C46.556 4.3154 46.2996 4.0514 45.9712 3.86186C45.643 3.67232 45.2737 3.57755 44.8633 3.57755C44.4528 3.57755 44.0836 3.67232 43.7552 3.86186C43.4338 4.0514 43.1772 4.3154 42.9857 4.65386C42.8011 4.99232 42.7088 5.37817 42.7088 5.8114C42.7088 6.24463 42.8011 6.63047 42.9857 6.96894C43.1772 7.3074 43.4338 7.5714 43.7552 7.76094C44.0836 7.95047 44.4528 8.04524 44.8633 8.04524ZM53.2777 3.16124L50.5281 9.18247C50.3229 9.64955 50.0835 9.98124 49.8099 10.1776C49.5432 10.3739 49.2252 10.472 48.8558 10.472C48.6096 10.472 48.377 10.4314 48.1582 10.3502C47.9461 10.2689 47.7649 10.1505 47.6144 9.99478L47.8709 9.60894C48.1445 9.88647 48.4762 10.0252 48.8661 10.0252C49.126 10.0252 49.3483 9.95417 49.5329 9.81201C49.7176 9.66986 49.8886 9.42617 50.0459 9.08094L50.3332 8.44124L47.9222 3.16124H48.4659L50.6102 7.90309L52.7544 3.16124H53.2777ZM59.5791 8.58001C58.9327 8.58001 58.3064 8.48922 57.6999 8.30755C57.1014 8.12588 56.6266 7.88507 56.2755 7.58494L56.8141 6.38847C57.1573 6.65696 57.5762 6.87814 58.0709 7.05186C58.5736 7.21771 59.0764 7.30063 59.5791 7.30063C60.2015 7.30063 60.6644 7.20188 60.9675 7.00447C61.2787 6.80707 61.4344 6.54645 61.4344 6.22263C61.4344 5.9857 61.3466 5.79219 61.171 5.64217C61.0034 5.48419 60.788 5.36184 60.5247 5.27494C60.2613 5.18804 59.9023 5.08937 59.4474 4.97878C58.8091 4.82873 58.2904 4.67868 57.8914 4.52863C57.5004 4.37858 57.1613 4.1456 56.874 3.8297C56.5948 3.50591 56.4551 3.07155 56.4551 2.52663C56.4551 2.06858 56.5788 1.65396 56.8261 1.28278C57.0815 0.903704 57.4605 0.603599 57.9632 0.382474C58.474 0.161348 59.0964 0.0507812 59.8304 0.0507812C60.3412 0.0507812 60.8439 0.113964 61.3386 0.24032C61.8334 0.366676 62.2602 0.54832 62.6193 0.785243L62.1286 1.9817C61.7615 1.76847 61.3785 1.60658 60.9795 1.49601C60.5806 1.38545 60.1935 1.33017 59.8185 1.33017C59.2041 1.33017 58.7452 1.43283 58.442 1.63817C58.1468 1.8435 57.9991 2.11596 57.9991 2.45555C57.9991 2.69247 58.0829 2.88596 58.2505 3.03601C58.4261 3.18606 58.6455 3.30452 58.9088 3.3914C59.1721 3.47827 59.5312 3.57698 59.986 3.68755C60.6085 3.8297 61.1192 3.97975 61.5181 4.1377C61.9171 4.28775 62.2563 4.52073 62.5355 4.83663C62.8228 5.1525 62.9664 5.57896 62.9664 6.11601C62.9664 6.57404 62.8388 6.98865 62.5834 7.35986C62.3361 7.73107 61.9571 8.02722 61.4463 8.24832C60.9357 8.46942 60.3132 8.58001 59.5791 8.58001ZM68.591 4.99063L67.2624 6.34109V8.46155H65.7063V0.169243H67.2624V4.42201L71.4038 0.169243H73.1513L69.6323 3.87709L73.3668 8.46155H71.5474L68.591 4.99063ZM80.695 6.54247H76.5057L75.6798 8.46155H74.0759L77.8463 0.169243H79.3784L83.1607 8.46155H81.5329L80.695 6.54247ZM80.1803 5.33417L78.6004 1.70924L77.0324 5.33417H80.1803ZM85.4232 0.169243H86.9789V7.15847H91.3597V8.46155H85.4232V0.169243ZM99.2784 6.54247H95.0891L94.2632 8.46155H92.6593L96.4296 0.169243H97.9617L101.744 8.46155H100.116L99.2784 6.54247ZM98.7637 5.33417L97.1837 1.70924L95.6157 5.33417H98.7637ZM109.488 8.46155L107.777 6.03309C107.705 6.04096 107.597 6.04494 107.454 6.04494H105.562V8.46155H104.006V0.169243H107.454C108.179 0.169243 108.81 0.287704 109.345 0.524627C109.888 0.76155 110.302 1.10114 110.59 1.5434C110.877 1.98566 111.02 2.51083 111.02 3.11894C111.02 3.74283 110.865 4.27986 110.554 4.73001C110.25 5.18017 109.812 5.51584 109.237 5.73694L111.164 8.46155H109.488ZM109.452 3.11894C109.452 2.58981 109.277 2.18309 108.926 1.89878C108.574 1.61447 108.06 1.47232 107.382 1.47232H105.562V4.7774H107.382C108.06 4.7774 108.574 4.63524 108.926 4.35094C109.277 4.05873 109.452 3.64806 109.452 3.11894Z" fill="#707070"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-content-bottom__right">
+                        <div class="main-pay">
+                            <ul class="main-pay-list">
+                                <li class="main-pay-item">
+                                    <a href="" class="main-pay-link">
+                                        <img src="assets/img/pay/fondy.png" alt="fondy" />
+                                    </a>
+                                </li>
+
+                                <li class="main-pay-item">
+                                    <a href="" class="main-pay-link">
+                                        <img src="assets/img/pay/visa.png" alt="visa" />
+                                    </a>
+                                </li>
+
+                                <li class="main-pay-item">
+                                    <a href="" class="main-pay-link">
+                                        <img src="assets/img/pay/mastercard.png" alt="mastercard" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<script src="assets/libs/swiper/swiper.min.js"></script>
+<script src="assets/libs/simplebar/simplebar.js"></script>
+</html>

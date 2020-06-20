@@ -1,0 +1,21 @@
+.banner-slider-pagination {
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  top: -51px;
+
+  & .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin: 0 7.5px;
+    background: #fff;
+    border: 1px solid $c-main;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px #EEF2F5;
+    opacity: 1;
+  }
+
+  & .swiper-pagination-bullet-active {
+    background: $c-bg-main;
+  }
+}
