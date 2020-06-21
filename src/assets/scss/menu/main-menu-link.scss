@@ -5,9 +5,15 @@
   color: #333333;
   display: inline-block;
   vertical-align: top;
-  padding: 10px;
+  padding: 3px 0;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+
+  &.strong {
+    font-weight: bold;
+  }
 
   &.active {
-    font-weight: bold;
+    border-bottom: 2px solid currentColor;
   }
 }
