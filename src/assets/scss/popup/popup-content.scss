@@ -1,0 +1,15 @@
+.popup-content {
+  position: relative;
+  z-index: 1;
+  max-width: 420px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #EEF2F5;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 30px;
+
+  &_long {
+    max-width: 470px;
+  }
+}

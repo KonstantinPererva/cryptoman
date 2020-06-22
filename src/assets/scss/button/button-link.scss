@@ -5,4 +5,14 @@
   color: #0075FF;
   padding: 3px 0;
   background: transparent;
+  cursor: pointer;
+
+  &_gray-light {
+    font-weight: normal;
+    color: $c-gray-text;
+  }
+  
+  &:focus,&:hover,&:active {
+    text-decoration: underline;
+  }
 }

@@ -1,0 +1,14 @@
+.popup-subtitle {
+  max-width: 302px;
+  width: 100%;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 13px;
+  text-align: center;
+  color: $c-dark-text;
+  margin: 0 auto 35px;
+
+  .popup-content & {
+    max-width: 400px;
+  }
+}

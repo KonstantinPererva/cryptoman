@@ -10,6 +10,10 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 17px;
+
+    .form-main-button & {
+      min-width: 250px;
+    }
   }
 
   &_small {
