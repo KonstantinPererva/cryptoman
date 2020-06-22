@@ -1,0 +1,10 @@
+.simple-box-img {
+  width: 100%;
+  max-width: 644px;
+  margin: 0 auto 69px;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}

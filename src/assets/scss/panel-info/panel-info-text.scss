@@ -1,0 +1,10 @@
+.panel-info-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 13px;
+  color: #FFFFFF;
+
+  & .strong {
+    font-weight: bold;
+  }
+}

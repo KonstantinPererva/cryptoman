@@ -1,7 +1,17 @@
 .page-section {
-  margin: 20px 0;
+  //margin: 20px 0;
 
   &_gray {
     background: $c-light;
+  }
+
+  &_dark {
+    background: $c-dark-text;
+  }
+
+  &_404 {
+    & .page-content {
+      margin: 0 auto 80px;
+    }
   }
 }
