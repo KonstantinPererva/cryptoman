@@ -1,0 +1,51 @@
+.article-box-content {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 15px;
+  color: $c-dark-text;
+
+  & p {
+    max-width: 765px;
+    width: 100%;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 15px;
+    color: $c-dark-text;
+    margin: 25px auto;
+
+    &.title {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 23px;
+      color: $c-dark-text;
+      margin: 0 auto 34px;
+    }
+  }
+
+  & img {
+    display: block;
+    max-width: 100%;
+    margin: 45px auto;
+  }
+
+  & .wr-list {
+    max-width: 765px;
+    width: 100%;
+    text-align: left;
+    margin: 0 auto 60px;
+  }
+
+  & ul {
+    max-width: 545px;
+    margin: 0 0 58px 16px;
+
+    & li {
+      list-style: disc;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 15px;
+      color: $c-dark-text;
+      margin: 0 0 15px;
+    }
+  }
+}
