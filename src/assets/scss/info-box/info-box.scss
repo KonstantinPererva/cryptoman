@@ -1,5 +1,13 @@
 .info-box {
+  &.page-content {
+    margin: 60px auto;
+    padding: 60px 20px;
 
+    @media (max-width: 991px) {
+      margin: 30px auto;
+      padding: 30px 20px;
+    }
+  }
   &__inner {
     max-width: 1065px;
     width: 100%;

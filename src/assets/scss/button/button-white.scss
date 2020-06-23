@@ -1,0 +1,34 @@
+.button-white {
+  @include button;
+  background: #FFFFFF;
+  border-color: #B8C5D0;
+  color: #666666;
+
+  &_big {
+    min-width: 200px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 17px;
+
+    .subscription-button & {
+      min-width: 155px;
+    }
+
+    .success-box-button & {
+      min-width: 176px;
+    }
+  }
+
+  &_small {
+    min-width: 128px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 13px;
+  }
+
+  &:hover, &:focus, &:active {
+    color: $c-main;
+    border-color: $c-main;
+  }
+}

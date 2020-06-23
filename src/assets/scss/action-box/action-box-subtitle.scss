@@ -7,4 +7,9 @@
   text-align: center;
   color: $c-dark-text;
   margin: 0 auto 32px;
+
+  @media (max-width: 991px) {
+    font-size: 12px;
+    line-height: 11px;
+  }
 }

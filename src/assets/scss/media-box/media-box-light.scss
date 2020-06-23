@@ -7,17 +7,36 @@
     max-height: 530px;
     padding: 0 30px 0 0;
 
+    @media (max-width: 991px) {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 0 15px 0 0;
+    }
+
     & .simplebar-track.simplebar-vertical {
       background: #ededed;
       width: 7px;
       border-radius: 4px;
 
+      @media (max-width: 991px) {
+        width: 5px;
+      }
+
       & .simplebar-scrollbar {
         right: 0;
+        width: 7px;
+
+        @media (max-width: 991px) {
+          width: 5px;
+        }
 
         &:before {
           background: #999;
           width: 7px;
+
+          @media (max-width: 991px) {
+            width: 5px;
+          }
         }
       }
     }

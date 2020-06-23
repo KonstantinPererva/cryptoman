@@ -4,6 +4,11 @@
   line-height: 15px;
   color: $c-dark-text;
 
+  @media (max-width: 991px) {
+    font-size: 12px;
+    line-height: 11px;
+  }
+
   & p {
     max-width: 765px;
     width: 100%;
@@ -13,12 +18,26 @@
     color: $c-dark-text;
     margin: 25px auto;
 
+    @media (max-width: 991px) {
+      font-size: 12px;
+      line-height: 11px;
+      margin: 15px auto;
+    }
+
+    @media (max-width: 767px) {
+      padding: 0 20px;
+    }
+
     &.title {
       font-weight: bold;
       font-size: 24px;
       line-height: 23px;
       color: $c-dark-text;
       margin: 0 auto 34px;
+
+      @media (max-width: 767px) {
+        margin: 0 auto 20px;
+      }
     }
   }
 
@@ -26,6 +45,10 @@
     display: block;
     max-width: 100%;
     margin: 45px auto;
+
+    @media (max-width: 991px) {
+      margin: 25px auto;
+    }
   }
 
   & .wr-list {
@@ -33,6 +56,11 @@
     width: 100%;
     text-align: left;
     margin: 0 auto 60px;
+
+    @media (max-width: 767px) {
+      padding: 0 20px;
+      margin: 0 auto 40px;
+    }
   }
 
   & ul {

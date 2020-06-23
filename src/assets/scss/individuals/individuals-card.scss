@@ -1,5 +1,11 @@
 .individuals-card {
   width: 350px;
-  padding: 59px 55px 42px;
+  padding: 35px 55px 15px;
   text-align: center;
+
+  @media (max-width: 991px) {
+    width: 220px;
+    padding: 35px 0 25px;
+    margin: 0 auto;
+  }
 }

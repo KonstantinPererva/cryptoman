@@ -1,3 +1,7 @@
 .text-banner-box-button {
   margin: 48px 0 0;
+
+  @media (max-width: 991px) {
+    margin: 26px 0 0;
+  }
 }

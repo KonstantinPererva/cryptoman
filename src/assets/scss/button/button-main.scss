@@ -14,6 +14,15 @@
     .form-main-button & {
       min-width: 250px;
     }
+
+    .subscription-button & {
+      min-width: 215px;
+    }
+
+    .success-box-button & {
+      min-width: 292px;
+      padding: 0 18px;
+    }
   }
 
   &_small {

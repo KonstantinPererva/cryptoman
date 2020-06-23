@@ -1,5 +1,6 @@
 .media-box-section-descr {
-  width: 608px;
+  max-width: 608px;
+  width: 100%;
   height: 26px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -9,4 +10,11 @@
   font-size: 14px;
   line-height: 14px;
   color: #333333;
+
+  @media (max-width: 991px) {
+    font-size: 12px;
+    line-height: 11px;
+    height: 34px;
+    -webkit-line-clamp: 3;
+  }
 }

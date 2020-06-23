@@ -1,0 +1,7 @@
+.page-mob {
+  display: none;
+
+  @media (max-width: 1151px) {
+    display: block;
+  }
+}

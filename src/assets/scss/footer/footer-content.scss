@@ -1,5 +1,9 @@
 .footer-content {
   &.page-content {
     padding: 43px 46px 25px;
+
+    @media (max-width: 767px) {
+      padding: 43px 20px 20px;
+    }
   }
 }

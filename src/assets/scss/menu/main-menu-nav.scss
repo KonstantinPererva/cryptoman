@@ -3,6 +3,10 @@
   &_footer {
     margin: 0 0 0 30px;
 
+    @media (max-width: 767px) {
+      margin: 0;
+    }
+
     & .main-menu-link {
       color: #fff;
       text-transform: none;
@@ -11,6 +15,10 @@
 
     & .main-menu-item {
       margin-left: 10px;
+
+      @media (max-width: 767px) {
+        margin: 0 0 30px;
+      }
     }
   }
 }

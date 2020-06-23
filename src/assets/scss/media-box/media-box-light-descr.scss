@@ -5,4 +5,18 @@
   font-size: 14px;
   line-height: 13px;
   color: #333333;
+
+  @media (max-width: 991px) {
+    font-size: 12px;
+    line-height: 11px;
+  }
+
+  & a {
+    color: $c-main;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

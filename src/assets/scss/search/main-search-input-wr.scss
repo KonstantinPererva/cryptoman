@@ -3,6 +3,10 @@
   width: 180px;
   height: 26px;
 
+  .header-mob-search & {
+    width: 290px;
+  }
+
   &:after {
     content: '';
     display: block;

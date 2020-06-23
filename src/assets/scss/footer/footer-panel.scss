@@ -2,8 +2,16 @@
   display: flex;
   margin: 0 0 28px;
 
+  @media (max-width: 767px) {
+    display: block;
+  }
+
   &__logo {
     flex-shrink: 0;
+
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__right {
@@ -12,8 +20,24 @@
     justify-content: flex-end;
     align-items: center;
 
+    @media (max-width: 767px) {
+      display: block;
+
+      & .main-menu-nav-horizontal .main-menu-list {
+        display: block;
+      }
+    }
+
     & .main-soc-net {
       margin-left: 20px;
+
+      @media (max-width: 767px) {
+        margin: 45px 0 30px;
+
+        & .soc-net-list {
+          justify-content: flex-start;
+        }
+      }
     }
   }
 }

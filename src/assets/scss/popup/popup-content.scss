@@ -7,9 +7,17 @@
   border: 1px solid #EEF2F5;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  padding: 30px;
+  padding: 30px 0;
+  transition: 300ms;
+  transform: scale(.8);
+  opacity: 0;
 
   &_long {
     max-width: 470px;
+  }
+
+  .popup.open & {
+    transform: scale(1);
+    opacity: 1;
   }
 }

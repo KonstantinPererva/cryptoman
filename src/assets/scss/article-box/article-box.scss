@@ -1,3 +1,8 @@
 .article-box {
   text-align: center;
+
+  @media (max-width: 767px) {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 }

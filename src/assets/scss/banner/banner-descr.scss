@@ -5,4 +5,13 @@
   font-size: 18px;
   line-height: 17px;
   color: #333333;
+
+  @media (max-width: 991px) {
+    max-width: 256px;
+    font-size: 12px;
+    line-height: 11px;
+    text-align: center;
+    background: #fff;
+    margin: 0 auto;
+  }
 }

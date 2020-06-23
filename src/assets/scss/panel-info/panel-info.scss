@@ -1,8 +1,12 @@
 .panel-info {
+  max-width: 1240px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 50px;
+  padding: 0 20px;
+  margin: 0 auto;
 
   &__left {
 

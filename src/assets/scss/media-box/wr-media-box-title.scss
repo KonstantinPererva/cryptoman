@@ -1,3 +1,7 @@
 .wr-media-box-title {
   margin: 0 0 57px;
+
+  @media (max-width: 991px) {
+    margin: 0 0 28px;
+  }
 }

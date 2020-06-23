@@ -1,0 +1,10 @@
+.success-box-button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  & a, & button {
+    margin: 10px 5px;
+  }
+}

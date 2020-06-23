@@ -4,5 +4,11 @@
   line-height: 17px;
   text-align: center;
   color: $c-dark-text;
-  margin: 17px 0 0;
+  margin: 17px auto 0;
+
+  @media (max-width: 991px) {
+    margin: 15px auto 0;
+    font-size: 12px;
+    line-height: 11px;
+  }
 }

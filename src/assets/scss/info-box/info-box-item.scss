@@ -2,4 +2,10 @@
   max-width: 355px;
   width: 100%;
   margin: 0 auto;
+
+  @media (max-width: 767px) {
+    & + .info-box-item {
+      margin: 35px auto 0;
+    }
+  }
 }

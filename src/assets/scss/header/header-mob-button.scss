@@ -1,0 +1,13 @@
+.header-mob-button {
+  display: flex;
+  align-items: center;
+}
+
+.button-search, .button-user {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

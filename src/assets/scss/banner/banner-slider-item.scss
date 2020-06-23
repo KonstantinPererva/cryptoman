@@ -1,4 +1,8 @@
 .banner-slider-item {
   height: 505px;
   padding: 20px;
+
+  @media (max-width: 991px) {
+    height: 411px;
+  }
 }

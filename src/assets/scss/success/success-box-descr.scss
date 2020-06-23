@@ -1,0 +1,14 @@
+.success-box-descr {
+  max-width: 302px;
+  width: 100%;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 13px;
+  color: $c-dark-text;
+  margin: 0 auto 35px;
+
+  @media (max-width: 991px) {
+    font-size: 12px;
+    line-height: 11px;
+  }
+}

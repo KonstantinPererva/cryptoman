@@ -14,4 +14,10 @@
       margin: 0 auto 80px;
     }
   }
+
+  &_marg {
+    & .page-content {
+      margin: 80px auto;
+    }
+  }
 }

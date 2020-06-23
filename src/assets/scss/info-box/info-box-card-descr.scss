@@ -7,4 +7,9 @@
   text-align: center;
   color: #333333;
   margin: 0 auto;
+
+  @media (max-width: 991px) {
+    font-size: 12px;
+    line-height: 11px;
+  }
 }

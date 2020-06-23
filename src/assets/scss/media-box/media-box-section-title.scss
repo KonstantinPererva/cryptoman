@@ -4,4 +4,9 @@
   line-height: 23px;
   color: #333333;
   margin: 0 0 21px;
+
+  @media (max-width: 991px) {
+    font-size: 18px;
+    line-height: 17px;
+  }
 }
