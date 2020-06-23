@@ -4,6 +4,15 @@
   line-height: 13px;
   color: #FFFFFF;
 
+  @media (max-width: 767px) {
+    font-size: 12px;
+    line-height: 16px;
+
+    & .mob-block {
+      display: block;
+    }
+  }
+
   & .strong {
     font-weight: bold;
   }

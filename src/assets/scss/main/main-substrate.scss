@@ -6,5 +6,11 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 0;
+  z-index: 2997;
+  opacity: 0;
+  transition: 300ms;
+
+  &.open {
+    opacity: 1;
+  }
 }

@@ -1,5 +1,9 @@
 .banner-slider-content {
   &.page-content {
     padding: 0;
+
+    @media (max-width: 991px) {
+      margin-top: -20px;
+    }
   }
 }

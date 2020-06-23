@@ -1,0 +1,23 @@
+.button-mob-back {
+  display: none;
+  padding: 4px 20px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 13px;
+  color: $c-dark-text;
+  margin: 0 0 30px;
+
+  @media (max-width: 991px) {
+    display: inline-flex;
+  }
+
+  &__ico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    margin: 0 7px 0 0;
+  }
+}

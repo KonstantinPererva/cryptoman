@@ -12,6 +12,13 @@
   cursor: pointer;
   border-radius: 5px;
 
+  @media (max-width: 991px) {
+    min-width: 110px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 13px;
+  }
+
   &.active {
     background: $c-main;
     border: 1px solid $c-main;;

@@ -2,21 +2,27 @@
   position: fixed;
   top: 50px;
   left: 0;
-  max-width: 300px;
   width: 100%;
   z-index: 2998;
-  transform: translateX(-100%);
   transition: 300ms;
   opacity: 0;
+  background: #fff;
+  padding: 0 0 25px;
+  transform: translateY(-100%);
+  text-align: center;
 
   &.open {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
+  }
+
+  &__button {
+    padding: 0 20px;
   }
   
   & .main-menu-nav {
     background: #fff;
-    padding: 50px 20px;
+    padding: 50px 20px 30px;
 
     & .main-menu-item {
       margin: 0 0 15px;

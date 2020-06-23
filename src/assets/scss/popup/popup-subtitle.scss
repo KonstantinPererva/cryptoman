@@ -8,6 +8,11 @@
   color: $c-dark-text;
   margin: 0 auto 35px;
 
+  @media (max-width: 991px) {
+    font-size: 12px;
+    line-height: 11px;
+  }
+
   .popup-content & {
     max-width: 400px;
   }

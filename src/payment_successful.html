@@ -13,17 +13,123 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="page-content header-content shadow shadow_bottom">
-                <div class="header-content__logo">
-                    <div class="main-logo">
-                        <a href="/">
-                            <img src="assets/img/svg/logo.svg" alt="logo">
-                        </a>
+            <div class="page-desktop">
+                <div class="page-content header-content shadow shadow_bottom">
+                    <div class="header-content__logo">
+                        <div class="main-logo">
+                            <a href="/">
+                                <img src="assets/img/svg/logo.svg" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="header-content__right">
+                        <nav class="main-menu-nav main-menu-nav-horizontal">
+                            <ul class="main-menu-list">
+                                <li class="main-menu-item">
+                                    <a href="analytics.html" class="main-menu-link strong">Аналитика</a>
+                                </li>
+
+                                <li class="main-menu-item">
+                                    <a href="training.html" class="main-menu-link strong">Обучение</a>
+                                </li>
+
+                                <li class="main-menu-item">
+                                    <a href="cooperation.html" class="main-menu-link">Сотрудничество</a>
+                                </li>
+
+                                <li class="main-menu-item">
+                                    <a href="services.html" class="main-menu-link">Услуги</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="main-search">
+                            <form action="!" class="main-search-form">
+                                <div class="main-search-row">
+                                    <button class="button-submit-search-form" type="submit">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.8901 16.8296L12.6613 11.6007C13.653 10.3764 14.25 8.81977 14.25 7.12503C14.25 3.19631 11.0537 0 7.12499 0C3.19627 0 0 3.19631 0 7.12503C0 11.0537 3.19631 14.2501 7.12503 14.2501C8.81977 14.2501 10.3764 13.653 11.6007 12.6613L16.8296 17.8902C16.9761 18.0366 17.2135 18.0366 17.36 17.8902L17.8902 17.3599C18.0366 17.2135 18.0366 16.976 17.8901 16.8296ZM7.12503 12.75C4.02322 12.75 1.50001 10.2268 1.50001 7.12503C1.50001 4.02322 4.02322 1.50001 7.12503 1.50001C10.2268 1.50001 12.75 4.02322 12.75 7.12503C12.75 10.2268 10.2268 12.75 7.12503 12.75Z" fill="#7D8892"/>
+                                        </svg>
+                                    </button>
+
+                                    <div class="main-search-input-wr">
+                                        <input type="text" class="main-search-input" placeholder="Поиск" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="main-register">
+                            <button class="button-main button-register" type="button" data-open-popup="entry">
+                                <span class="button-register__ico">
+                                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.60665 9.78131C9.8303 9.78131 11.6331 7.59171 11.6331 4.89069C11.6331 2.1896 11.0412 0 7.60665 0C4.17208 0 3.58008 2.1896 3.58008 4.89069C3.58008 7.59171 5.38288 9.78131 7.60665 9.78131Z" fill="white"/>
+                                        <path d="M15.2015 17.0509C15.127 12.3457 14.5125 11.0049 9.81 10.1562C9.81 10.1562 9.14806 10.9997 7.6052 10.9997C6.06234 10.9997 5.40029 10.1562 5.40029 10.1562C0.749142 10.9957 0.0972571 12.3165 0.0115428 16.8981C0.00451427 17.2722 0.00125714 17.2919 0 17.2484C0.000285714 17.3298 0.000628444 17.4803 0.000628444 17.7428C0.000628444 17.7428 1.12017 19.9997 7.6052 19.9997C14.0901 19.9997 15.2098 17.7428 15.2098 17.7428C15.2098 17.5741 15.2099 17.4569 15.2101 17.3771C15.2088 17.404 15.2063 17.3519 15.2015 17.0509Z" fill="white"/>
+                                    </svg>
+                                </span>
+
+                                <span class="button-register__text">Вход</span>
+                            </button>
+                        </div>
+
+                        <!--                    Залогиненный пользователь-->
+                        <div class="main-register" style="display: none">
+                            <a href="#" class="button-main button-register" type="button">
+                                <span class="button-register__ico">
+                                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.60665 9.78131C9.8303 9.78131 11.6331 7.59171 11.6331 4.89069C11.6331 2.1896 11.0412 0 7.60665 0C4.17208 0 3.58008 2.1896 3.58008 4.89069C3.58008 7.59171 5.38288 9.78131 7.60665 9.78131Z" fill="white"/>
+                                        <path d="M15.2015 17.0509C15.127 12.3457 14.5125 11.0049 9.81 10.1562C9.81 10.1562 9.14806 10.9997 7.6052 10.9997C6.06234 10.9997 5.40029 10.1562 5.40029 10.1562C0.749142 10.9957 0.0972571 12.3165 0.0115428 16.8981C0.00451427 17.2722 0.00125714 17.2919 0 17.2484C0.000285714 17.3298 0.000628444 17.4803 0.000628444 17.7428C0.000628444 17.7428 1.12017 19.9997 7.6052 19.9997C14.0901 19.9997 15.2098 17.7428 15.2098 17.7428C15.2098 17.5741 15.2099 17.4569 15.2101 17.3771C15.2088 17.404 15.2063 17.3519 15.2015 17.0509Z" fill="white"/>
+                                    </svg>
+                                </span>
+
+                                <span class="button-register__text">Мой кабинет</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-mob">
+                <div class="header-mob-container">
+                    <div class="page-content">
+                        <div class="header-mob">
+                            <div class="button-toggle-menu">
+                                <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="20" height="1" fill="#333333"/>
+                                    <rect y="6" width="20" height="1" fill="#333333"/>
+                                    <rect y="12" width="20" height="1" fill="#333333"/>
+                                </svg>
+                            </div>
+
+                            <div class="header-mob-logo">
+                                <div class="main-logo">
+                                    <a href="/">
+                                        <img src="assets/img/svg/logo.svg" alt="logo">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="header-mob-button">
+                                <div class="button-search">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.8901 16.8296L12.6613 11.6007C13.653 10.3764 14.25 8.81977 14.25 7.12503C14.25 3.19631 11.0537 0 7.12499 0C3.19627 0 0 3.19631 0 7.12503C0 11.0537 3.19631 14.2501 7.12503 14.2501C8.81977 14.2501 10.3764 13.653 11.6007 12.6613L16.8296 17.8902C16.9761 18.0366 17.2135 18.0366 17.36 17.8902L17.8902 17.3599C18.0366 17.2135 18.0366 16.976 17.8901 16.8296ZM7.12503 12.75C4.02322 12.75 1.50001 10.2268 1.50001 7.12503C1.50001 4.02322 4.02322 1.50001 7.12503 1.50001C10.2268 1.50001 12.75 4.02322 12.75 7.12503C12.75 10.2268 10.2268 12.75 7.12503 12.75Z" fill="#333333"/>
+                                    </svg>
+                                </div>
+
+                                <div class="button-user" data-open-popup="entry">
+                                    <svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.0331 4.89069C12.0331 7.37474 10.3951 9.18131 8.60665 9.18131C6.81809 9.18131 5.18008 7.37473 5.18008 4.89069C5.18008 3.55413 5.33343 2.48767 5.80793 1.76025C6.24388 1.09194 7.02884 0.6 8.60665 0.6C10.1844 0.6 10.9694 1.09194 11.4053 1.76023C11.8798 2.48765 12.0331 3.55411 12.0331 4.89069Z" fill="white" stroke="#333333" stroke-width="1.2"/>
+                                        <path d="M16.2014 17.0509C16.1268 12.3457 15.5123 11.0049 10.8099 10.1562C10.8099 10.1562 10.1479 10.9997 8.60506 10.9997C7.0622 10.9997 6.40015 10.1562 6.40015 10.1562C1.749 10.9957 1.09712 12.3165 1.0114 16.8981L1 17.5C1 17.5 1 17.5 1.00049 17.7428C1.00049 17.7428 2.12003 19.9997 8.60506 19.9997C15.09 19.9997 16.2096 17.7428 16.2096 17.7428C16.2096 17.5741 16.2097 17.4569 16.2099 17.3771C16.2099 17.3771 16.2061 17.3519 16.2014 17.0509Z" fill="white" stroke="#333333" stroke-width="1.2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="header-content__right">
-                    <nav class="main-menu-nav main-menu-nav-horizontal">
+                <div class="header-mob-menu">
+                    <nav class="main-menu-nav">
                         <ul class="main-menu-list">
                             <li class="main-menu-item">
                                 <a href="analytics.html" class="main-menu-link strong">Аналитика</a>
@@ -43,6 +149,37 @@
                         </ul>
                     </nav>
 
+                    <div class="header-mob-menu__button">
+                        <div class="main-register">
+                            <button class="button-main button-register" type="button" data-open-popup="entry">
+                                <span class="button-register__ico">
+                                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.60665 9.78131C9.8303 9.78131 11.6331 7.59171 11.6331 4.89069C11.6331 2.1896 11.0412 0 7.60665 0C4.17208 0 3.58008 2.1896 3.58008 4.89069C3.58008 7.59171 5.38288 9.78131 7.60665 9.78131Z" fill="white"/>
+                                        <path d="M15.2015 17.0509C15.127 12.3457 14.5125 11.0049 9.81 10.1562C9.81 10.1562 9.14806 10.9997 7.6052 10.9997C6.06234 10.9997 5.40029 10.1562 5.40029 10.1562C0.749142 10.9957 0.0972571 12.3165 0.0115428 16.8981C0.00451427 17.2722 0.00125714 17.2919 0 17.2484C0.000285714 17.3298 0.000628444 17.4803 0.000628444 17.7428C0.000628444 17.7428 1.12017 19.9997 7.6052 19.9997C14.0901 19.9997 15.2098 17.7428 15.2098 17.7428C15.2098 17.5741 15.2099 17.4569 15.2101 17.3771C15.2088 17.404 15.2063 17.3519 15.2015 17.0509Z" fill="white"/>
+                                    </svg>
+                                </span>
+
+                                <span class="button-register__text">Вход</span>
+                            </button>
+                        </div>
+
+                        <!--                    Залогиненный пользователь-->
+                        <div class="main-register" style="display: none">
+                            <a href="#" class="button-main button-register" type="button">
+                                <span class="button-register__ico">
+                                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.60665 9.78131C9.8303 9.78131 11.6331 7.59171 11.6331 4.89069C11.6331 2.1896 11.0412 0 7.60665 0C4.17208 0 3.58008 2.1896 3.58008 4.89069C3.58008 7.59171 5.38288 9.78131 7.60665 9.78131Z" fill="white"/>
+                                        <path d="M15.2015 17.0509C15.127 12.3457 14.5125 11.0049 9.81 10.1562C9.81 10.1562 9.14806 10.9997 7.6052 10.9997C6.06234 10.9997 5.40029 10.1562 5.40029 10.1562C0.749142 10.9957 0.0972571 12.3165 0.0115428 16.8981C0.00451427 17.2722 0.00125714 17.2919 0 17.2484C0.000285714 17.3298 0.000628444 17.4803 0.000628444 17.7428C0.000628444 17.7428 1.12017 19.9997 7.6052 19.9997C14.0901 19.9997 15.2098 17.7428 15.2098 17.7428C15.2098 17.5741 15.2099 17.4569 15.2101 17.3771C15.2088 17.404 15.2063 17.3519 15.2015 17.0509Z" fill="white"/>
+                                    </svg>
+                                </span>
+
+                                <span class="button-register__text">Мой кабинет</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-mob-search">
                     <div class="main-search">
                         <form action="!" class="main-search-form">
                             <div class="main-search-row">
@@ -57,33 +194,6 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
-
-                    <div class="main-register">
-                        <button class="button-main button-register" type="button">
-                            <span class="button-register__ico">
-                                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.60665 9.78131C9.8303 9.78131 11.6331 7.59171 11.6331 4.89069C11.6331 2.1896 11.0412 0 7.60665 0C4.17208 0 3.58008 2.1896 3.58008 4.89069C3.58008 7.59171 5.38288 9.78131 7.60665 9.78131Z" fill="white"/>
-                                    <path d="M15.2015 17.0509C15.127 12.3457 14.5125 11.0049 9.81 10.1562C9.81 10.1562 9.14806 10.9997 7.6052 10.9997C6.06234 10.9997 5.40029 10.1562 5.40029 10.1562C0.749142 10.9957 0.0972571 12.3165 0.0115428 16.8981C0.00451427 17.2722 0.00125714 17.2919 0 17.2484C0.000285714 17.3298 0.000628444 17.4803 0.000628444 17.7428C0.000628444 17.7428 1.12017 19.9997 7.6052 19.9997C14.0901 19.9997 15.2098 17.7428 15.2098 17.7428C15.2098 17.5741 15.2099 17.4569 15.2101 17.3771C15.2088 17.404 15.2063 17.3519 15.2015 17.0509Z" fill="white"/>
-                                </svg>
-                            </span>
-
-                            <span class="button-register__text">Вход</span>
-                        </button>
-                    </div>
-
-<!--                    Залогиненный пользователь-->
-                    <div class="main-register" style="display: none">
-                        <a href="#" class="button-main button-register" type="button">
-                            <span class="button-register__ico">
-                                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.60665 9.78131C9.8303 9.78131 11.6331 7.59171 11.6331 4.89069C11.6331 2.1896 11.0412 0 7.60665 0C4.17208 0 3.58008 2.1896 3.58008 4.89069C3.58008 7.59171 5.38288 9.78131 7.60665 9.78131Z" fill="white"/>
-                                    <path d="M15.2015 17.0509C15.127 12.3457 14.5125 11.0049 9.81 10.1562C9.81 10.1562 9.14806 10.9997 7.6052 10.9997C6.06234 10.9997 5.40029 10.1562 5.40029 10.1562C0.749142 10.9957 0.0972571 12.3165 0.0115428 16.8981C0.00451427 17.2722 0.00125714 17.2919 0 17.2484C0.000285714 17.3298 0.000628444 17.4803 0.000628444 17.7428C0.000628444 17.7428 1.12017 19.9997 7.6052 19.9997C14.0901 19.9997 15.2098 17.7428 15.2098 17.7428C15.2098 17.5741 15.2099 17.4569 15.2101 17.3771C15.2088 17.404 15.2063 17.3519 15.2015 17.0509Z" fill="white"/>
-                                </svg>
-                            </span>
-
-                            <span class="button-register__text">Мой кабинет</span>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -208,6 +318,210 @@
                 </div>
             </div>
         </footer>
+
+        <span class="main-substrate" style="display: none"></span>
+    </div>
+
+    <!--  POPUPS  -->
+
+    <div class="popup" data-popup="registration" style="display: none">
+        <div class="popup__inner">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <div class="popup-title">
+                        <span>Регистрация</span>
+                    </div>
+
+                    <div class="popup-subtitle">
+                        <span>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</span>
+                    </div>
+                </div>
+
+                <div class="popup-body">
+                    <form action="!" class="form-main">
+                        <div class="form-main-row">
+                            <input type="text" class="form-main-input" placeholder="Email">
+                        </div>
+
+                        <div class="form-main-row">
+                            <input type="text" class="form-main-input" placeholder="Пароль">
+                        </div>
+
+                        <div class="form-main-row">
+                            <input type="text" class="form-main-input" placeholder="Повторите пароль">
+                        </div>
+
+                        <div class="form-main-button">
+                            <button type="submit" class="button-main button-main_big">
+                                <span>Зарегистрироваться</span>
+                            </button>
+                        </div>
+
+                        <div class="form-main-bottom">
+                            <div class="form-main-text">
+                                <span>Уже зарегистрированы?</span>
+                            </div>
+
+                            <button type="button" class="button-link" data-open-popup="entry">Войти</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="popup-footer">
+                    <div class="popup-text-small">
+                        <span>Нажимая на кнопку, вы подтверждаете свое согласие на обработку персональных данных в соответствии с Политикой конфиденциальности.</span>
+                    </div>
+                </div>
+            </div>
+
+            <span class="popup-substrate" data-close-popup></span>
+        </div>
+    </div>
+
+    <div class="popup" data-popup="entry" style="display: none">
+        <div class="popup__inner">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <div class="popup-title">
+                        <span>Вход</span>
+                    </div>
+
+                    <div class="popup-subtitle">
+                        <span>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</span>
+                    </div>
+                </div>
+
+                <div class="popup-body">
+                    <form action="!" class="form-main">
+                        <div class="form-main-row">
+                            <input type="text" class="form-main-input" placeholder="Email">
+                        </div>
+
+                        <div class="form-main-row">
+                            <input type="text" class="form-main-input" placeholder="Пароль">
+                        </div>
+
+                        <div class="form-main-row">
+                            <button type="button" class="button-link button-link_gray-light" data-open-popup="password-recovery">Забыли пароль?</button>
+                        </div>
+
+                        <div class="form-main-button">
+                            <button type="submit" class="button-main button-main_big">
+                                <span>Войти</span>
+                            </button>
+                        </div>
+
+                        <div class="form-main-bottom">
+                            <div class="form-main-text">
+                                <span>Впервые у нас?</span>
+                            </div>
+
+                            <button type="button" class="button-link" data-open-popup="registration">Регистрация</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <span class="popup-substrate" data-close-popup></span>
+        </div>
+    </div>
+
+    <div class="popup" data-popup="password-recovery" style="display: none">
+        <div class="popup__inner">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <div class="popup-title">
+                        <span>Восстановление пароля</span>
+                    </div>
+
+                    <div class="popup-subtitle">
+                        <span>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</span>
+                    </div>
+                </div>
+
+                <div class="popup-body">
+                    <form action="!" class="form-main">
+                        <div class="form-main-row">
+                            <input type="text" class="form-main-input" placeholder="Email">
+                        </div>
+
+                        <div class="form-main-button">
+                            <button type="button" class="button-main button-main_big" data-open-popup="restore-password">
+                                <span>Восстановить</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <span class="popup-substrate" data-close-popup></span>
+        </div>
+    </div>
+
+    <div class="popup" data-popup="restore-password" style="display: none">
+        <div class="popup__inner">
+            <div class="popup-content popup-content_long">
+                <div class="popup-header">
+                    <div class="popup-img">
+                        <img src="assets/img/svg/success.svg" alt="success">
+                    </div>
+
+                    <div class="popup-title">
+                        <span>Восстановить пароль</span>
+                    </div>
+
+                    <div class="popup-subtitle">
+                        <span>Контрольная строка, а также ваши регистрационные данные были высланы по E-Mail. Пожалуйста, дождитесь письма, так как контрольная строка изменяется при каждом запросе.</span>
+                    </div>
+                </div>
+
+                <div class="popup-button">
+                    <button type="button" class="button-main button-main_big" data-close-popup>
+                        <span>Закрыть</span>
+                    </button>
+                </div>
+            </div>
+
+            <span class="popup-substrate" data-close-popup></span>
+        </div>
+    </div>
+
+    <div class="popup" data-popup="subscription" style="display: none">
+        <div class="popup__inner">
+            <div class="popup-content">
+                <div class="subscription">
+                    <div class="subscription-img">
+                        <img src="assets/img/svg/subscription.svg" alt="subscription" />
+                    </div>
+
+                    <div class="wr-subscription-title">
+                        <div class="subscription-title">
+                            <span>Наименование подписки</span>
+                        </div>
+
+                        <div class="subscription-subtitle">
+                            <span>Длительность подписки</span>
+                        </div>
+                    </div>
+
+                    <div class="subscription-descr">
+                        <span>Условия использования... Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</span>
+                    </div>
+
+                    <div class="subscription-button">
+                        <button type="button" class="button-main button-main_big subscription-button-pay">
+                            <span>Оплатить</span>
+                        </button>
+
+                        <button type="button" class="button-white button-white_big subscription-button-close">
+                            <span>Закрыть</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <span class="popup-substrate" data-close-popup></span>
+        </div>
     </div>
 </body>
 
